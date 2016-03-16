@@ -43,11 +43,11 @@ ENV CATALINA_HOME /opt/tomcat
 ENV CATALINA_BASE /opt/tomcat
 ENV PATH $PATH:$CATALINA_HOME/bin
 
-# EXPOSE PORT 8080 8009
+# Expose port 8080 8009
 EXPOSE 8080
 EXPOSE 8009
 
 WORKDIR $CATALINA_HOME
 
-# RUN Tomcat
+# Start Tomcat
 CMD ["catalina.sh", "run"]
