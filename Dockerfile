@@ -49,5 +49,5 @@ EXPOSE 8009
 
 WORKDIR $CATALINA_HOME
 
-# Launch Tomcat
+# RUN Tomcat
 CMD ["catalina.sh", "run"]
