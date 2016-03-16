@@ -38,10 +38,7 @@ RUN wget --quiet --no-cookies http://apache.rediris.es/tomcat/tomcat-8/v${TOMCAT
 tar xzvf /tmp/tomcat.tgz -C /opt && \
 mv /opt/apache-tomcat-${TOMCAT_VERSION} /opt/tomcat
 
-# Add admin/admin user
-ADD tomcat-users.xml /opt/tomcat/conf/
-
-
+# Define CATALINA variable
 ENV CATALINA_HOME /opt/tomcat
 ENV CATALINA_BASE /opt/tomcat
 ENV PATH $PATH:$CATALINA_HOME/bin
