@@ -33,7 +33,6 @@ RUN apt-add-repository universe
 RUN apt-get update
 RUN apt-get install -y maven
 
-
 # Get Tomcat
 RUN wget --quiet --no-cookies http://apache.rediris.es/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz -O /tmp/tomcat.tgz && \
 tar xzvf /tmp/tomcat.tgz -C /opt && \
